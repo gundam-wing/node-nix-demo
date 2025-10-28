@@ -2,7 +2,7 @@
   description = "A development environment for nodejs";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/2237beb4d9789f6b374542a93959c9c3aea04678";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
