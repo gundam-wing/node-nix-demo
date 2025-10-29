@@ -40,3 +40,15 @@ The string output of a derivation is always a Nix store path which includes an "
 /nix/store/          sglc12hc6pc68w5ppn2k56n6jcpaci16  my-package-1.0
 1. Nix store prefix  2. Hash part                      3. Package name
 ```
+
+### run commands inside the development env
+https://zero-to-nix.com/start/nix-develop/#run-commands-inside-the-development-environment
+```sh
+nix develop "https://flakehub.com/f/DeterminateSystems/zero-to-nix/*#example" --command git help
+```
+
+### flakes
+
+A Nix flake is a directory with a flake.nix and flake.lock at the root that outputs Nix expressions that others can use to do things like build packages, run programs, use development environments, or stand up NixOS systems.
+
+It may be helpful to think of flakes as processors of Nix code. They take Nix expressions as input and output things that Nix can use, like package definitions, development environments, or NixOS configurations.
